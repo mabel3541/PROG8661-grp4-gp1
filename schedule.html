@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - TechSummit 2024</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechSummit<span class="accent">2024</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="schedule.html" class="nav-link active">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-hero-title">Conference Schedule</h1>
+                <p class="page-hero-subtitle">Three days of cutting-edge technology sessions, workshops, and networking opportunities</p>
+                <div class="schedule-dates">
+                    <div class="date-item">
+                        <span class="date-number">15</span>
+                        <span class="date-info">Sept<br>Day 1</span>
+                    </div>
+                    <div class="date-separator">-</div>
+                    <div class="date-item">
+                        <span class="date-number">17</span>
+                        <span class="date-info">Sept<br>Day 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Overview -->
+    <section class="schedule-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Event Overview</h2>
+                <p class="section-subtitle">Join us for three days of innovation, learning, and networking at San Francisco's premier tech event</p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <div class="icon-calendar"></div>
+                    </div>
+                    <h3 class="overview-title">50+ Sessions</h3>
+                    <p class="overview-description">Keynotes, panels, workshops, and lightning talks covering the latest in tech</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <div class="icon-users"></div>
+                    </div>
+                    <h3 class="overview-title">150+ Speakers</h3>
+                    <p class="overview-description">Industry leaders, innovators, and experts from top tech companies</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <div class="icon-network"></div>
+                    </div>
+                    <h3 class="overview-title">Networking Events</h3>
+                    <p class="overview-description">Coffee breaks, lunch sessions, and evening receptions for meaningful connections</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <div class="icon-workshop"></div>
+                    </div>
+                    <h3 class="overview-title">Hands-on Workshops</h3>
+                    <p class="overview-description">Interactive sessions with practical takeaways and real-world applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day Navigation -->
+    <section class="schedule-navigation">
+        <div class="container">
+            <div class="day-tabs">
+                <button class="day-tab active" data-day="day1">
+                    <span class="tab-date">Sept 15</span>
+                    <span class="tab-day">Day 1</span>
+                    <span class="tab-theme">Opening & AI</span>
+                </button>
+                <button class="day-tab" data-day="day2">
+                    <span class="tab-date">Sept 16</span>
+                    <span class="tab-day">Day 2</span>
+                    <span class="tab-theme">Innovation & Future</span>
+                </button>
+                <button class="day-tab" data-day="day3">
+                    <span class="tab-date">Sept 17</span>
+                    <span class="tab-day">Day 3</span>
+                    <span class="tab-theme">Networking & Closing</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Content -->
+    <section class="schedule-content">
+        <div class="container">
+            <!-- Day 1 Schedule -->
+            <div class="day-schedule active" id="day1">
+                <div class="day-header">
+                    <h2 class="day-title">Day 1 - September 15, 2024</h2>
+                    <p class="day-subtitle">Opening Ceremonies & AI Revolution</p>
+                </div>
+                
+                <div class="schedule-timeline">
+                    <div class="session-block">
+                        <div class="session-time">8:00 - 9:00</div>
+                        <div class="session-item registration">
+                            <div class="session-header">
+                                <h3 class="session-title">Registration & Welcome Coffee</h3>
+                                <span class="session-type">Registration</span>
+                            </div>
+                            <p class="session-description">Check-in, welcome bags, and networking with early arrivals</p>
+                            <div class="session-location">📍 Main Lobby</div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">9:00 - 10:00</div>
+                        <div class="session-item keynote">
+                            <div class="session-header">
+                                <h3 class="session-title">Opening Keynote: The Future of Technology</h3>
+                                <span class="session-type">Keynote</span>
+                            </div>
+                            <div class="session-speaker">
+                                <div class="speaker-avatar"></div>
+                                <div class="speaker-info">
+                                    <h4 class="speaker-name">Dr. Sarah Chen</h4>
+                                    <p class="speaker-title">Chief AI Officer, TechCorp</p>
+                                </div>
+                            </div>
+                            <p class="session-description">Exploring the transformative impact of AI, machine learning, and emerging technologies on business and society</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">10:00 - 10:30</div>
+                        <div class="session-item break">
+                            <div class="session-header">
+                                <h3 class="session-title">Coffee Break & Networking</h3>
+                                <span class="session-type">Break</span>
+                            </div>
+                            <p class="session-description">Refreshments and informal networking opportunities</p>
+                            <div class="session-location">📍 Exhibition Hall</div>
+                        </div>
+                    </div>
+
+                    <div class="session-block parallel">
+                        <div class="session-time">10:30 - 11:30</div>
+                        <div class="parallel-sessions">
+                            <div class="session-item talk">
+                                <div class="session-header">
+                                    <h3 class="session-title">Machine Learning in Production</h3>
+                                    <span class="session-type">Technical Talk</span>
+                                </div>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Marcus Rodriguez</h4>
+                                        <p class="speaker-title">ML Engineer, DataFlow</p>
+                                    </div>
+                                </div>
+                                <p class="session-description">Best practices for deploying and scaling machine learning models in production environments</p>
+                                <div class="session-location">📍 Room A</div>
+                                <div class="session-actions">
+                                    <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                    <button class="btn btn-secondary btn-small session-details">View Details</button>
+                                </div>
+                            </div>
+                            
+                            <div class="session-item workshop">
+                                <div class="session-header">
+                                    <h3 class="session-title">Getting Started with Cloud Computing</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Emily Watson</h4>
+                                        <p class="speaker-title">Cloud Architect, CloudTech</p>
+                                    </div>
+                                </div>
+                                <p class="session-description">Hands-on workshop covering cloud fundamentals, deployment strategies, and cost optimization</p>
+                                <div class="session-location">📍 Workshop Room 1</div>
+                                <div class="session-capacity">👥 Limited to 30 participants</div>
+                                <div class="session-actions">
+                                    <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                    <button class="btn btn-secondary btn-small session-details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">11:30 - 12:30</div>
+                        <div class="session-item panel">
+                            <div class="session-header">
+                                <h3 class="session-title">Panel: The Ethics of AI</h3>
+                                <span class="session-type">Panel Discussion</span>
+                            </div>
+                            <div class="panel-speakers">
+                                <div class="panel-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <span class="speaker-name">Dr. Alex Kumar</span>
+                                </div>
+                                <div class="panel-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <span class="speaker-name">Lisa Park</span>
+                                </div>
+                                <div class="panel-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <span class="speaker-name">James Wilson</span>
+                                </div>
+                                <div class="panel-moderator">
+                                    <span class="moderator-label">Moderated by:</span>
+                                    <span class="moderator-name">Dr. Sarah Chen</span>
+                                </div>
+                            </div>
+                            <p class="session-description">Exploring the ethical implications of AI development, bias in algorithms, and responsible innovation</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">12:30 - 14:00</div>
+                        <div class="session-item lunch">
+                            <div class="session-header">
+                                <h3 class="session-title">Lunch & Networking</h3>
+                                <span class="session-type">Lunch</span>
+                            </div>
+                            <p class="session-description">Catered lunch with networking opportunities and sponsor booths</p>
+                            <div class="session-location">📍 Exhibition Hall</div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">14:00 - 15:00</div>
+                        <div class="session-item keynote">
+                            <div class="session-header">
+                                <h3 class="session-title">Keynote: Democratizing AI</h3>
+                                <span class="session-type">Keynote</span>
+                            </div>
+                            <div class="session-speaker">
+                                <div class="speaker-avatar"></div>
+                                <div class="speaker-info">
+                                    <h4 class="speaker-name">Dr. Michael Thompson</h4>
+                                    <p class="speaker-title">Director of AI Research, FutureAI</p>
+                                </div>
+                            </div>
+                            <p class="session-description">How to make AI accessible to everyone: tools, platforms, and the future of no-code AI solutions</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">17:00 - 19:00</div>
+                        <div class="session-item networking">
+                            <div class="session-header">
+                                <h3 class="session-title">Welcome Reception</h3>
+                                <span class="session-type">Networking</span>
+                            </div>
+                            <p class="session-description">Opening night reception with drinks, appetizers, and live music</p>
+                            <div class="session-location">📍 Rooftop Terrace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Schedule -->
+            <div class="day-schedule" id="day2">
+                <div class="day-header">
+                    <h2 class="day-title">Day 2 - September 16, 2024</h2>
+                    <p class="day-subtitle">Innovation & The Future of Technology</p>
+                </div>
+                
+                <div class="schedule-timeline">
+                    <div class="session-block">
+                        <div class="session-time">9:00 - 10:00</div>
+                        <div class="session-item keynote">
+                            <div class="session-header">
+                                <h3 class="session-title">Keynote: Blockchain & Web3 Revolution</h3>
+                                <span class="session-type">Keynote</span>
+                            </div>
+                            <div class="session-speaker">
+                                <div class="speaker-avatar"></div>
+                                <div class="speaker-info">
+                                    <h4 class="speaker-name">Anna Blockchain</h4>
+                                    <p class="speaker-title">Founder, CryptoVentures</p>
+                                </div>
+                            </div>
+                            <p class="session-description">The decentralized future: exploring blockchain applications beyond cryptocurrency</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block parallel">
+                        <div class="session-time">10:30 - 11:30</div>
+                        <div class="parallel-sessions">
+                            <div class="session-item workshop">
+                                <div class="session-header">
+                                    <h3 class="session-title">Building Secure Applications</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">David Security</h4>
+                                        <p class="speaker-title">Security Expert, SecureNet</p>
+                                    </div>
+                                </div>
+                                <p class="session-description">Hands-on security best practices for modern web applications</p>
+                                <div class="session-location">📍 Workshop Room 2</div>
+                                <div class="session-capacity">👥 Limited to 25 participants</div>
+                                <div class="session-actions">
+                                    <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                    <button class="btn btn-secondary btn-small session-details">View Details</button>
+                                </div>
+                            </div>
+                            
+                            <div class="session-item talk">
+                                <div class="session-header">
+                                    <h3 class="session-title">IoT & Edge Computing</h3>
+                                    <span class="session-type">Technical Talk</span>
+                                </div>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar"></div>
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Maria IoT</h4>
+                                        <p class="speaker-title">IoT Director, IoTSolutions</p>
+                                    </div>
+                                </div>
+                                <p class="session-description">Connecting the world: IoT implementation strategies and edge computing benefits</p>
+                                <div class="session-location">📍 Room B</div>
+                                <div class="session-actions">
+                                    <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                    <button class="btn btn-secondary btn-small session-details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">14:00 - 16:00</div>
+                        <div class="session-item special">
+                            <div class="session-header">
+                                <h3 class="session-title">Startup Showcase & Pitch Competition</h3>
+                                <span class="session-type">Competition</span>
+                            </div>
+                            <p class="session-description">10 selected startups pitch their innovative solutions to a panel of investors</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-prize">🏆 $50,000 Grand Prize</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Schedule -->
+            <div class="day-schedule" id="day3">
+                <div class="day-header">
+                    <h2 class="day-title">Day 3 - September 17, 2024</h2>
+                    <p class="day-subtitle">Networking & Future Directions</p>
+                </div>
+                
+                <div class="schedule-timeline">
+                    <div class="session-block">
+                        <div class="session-time">9:00 - 10:00</div>
+                        <div class="session-item keynote">
+                            <div class="session-header">
+                                <h3 class="session-title">Closing Keynote: Technology for Good</h3>
+                                <span class="session-type">Keynote</span>
+                            </div>
+                            <div class="session-speaker">
+                                <div class="speaker-avatar"></div>
+                                <div class="speaker-info">
+                                    <h4 class="speaker-name">Dr. Jennifer Impact</h4>
+                                    <p class="speaker-title">Director, Tech for Good Foundation</p>
+                                </div>
+                            </div>
+                            <p class="session-description">How technology can solve global challenges and create positive social impact</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                            <div class="session-actions">
+                                <button class="btn btn-primary btn-small add-to-calendar">Add to Calendar</button>
+                                <button class="btn btn-secondary btn-small session-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">10:30 - 12:00</div>
+                        <div class="session-item networking">
+                            <div class="session-header">
+                                <h3 class="session-title">Interactive Networking Session</h3>
+                                <span class="session-type">Networking</span>
+                            </div>
+                            <p class="session-description">Structured networking with breakout sessions by industry and interests</p>
+                            <div class="session-location">📍 Exhibition Hall</div>
+                        </div>
+                    </div>
+
+                    <div class="session-block">
+                        <div class="session-time">14:00 - 15:00</div>
+                        <div class="session-item closing">
+                            <div class="session-header">
+                                <h3 class="session-title">Closing Ceremony & Awards</h3>
+                                <span class="session-type">Ceremony</span>
+                            </div>
+                            <p class="session-description">Recognition of outstanding contributions and announcement of next year's event</p>
+                            <div class="session-location">📍 Main Auditorium</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule CTA -->
+    <section class="schedule-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Join TechSummit 2024?</h2>
+                <p class="cta-subtitle">Don't miss out on three days of innovation, learning, and networking</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large register-btn">Register Now</button>
+                    <button class="btn btn-secondary btn-large download-schedule">Download Full Schedule</button>
+                </div>
+                <div class="cta-info">
+                    <div class="info-item">
+                        <span class="info-label">Early Bird Price:</span>
+                        <span class="info-value">$299</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Regular Price:</span>
+                        <span class="info-value">$399</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechSummit<span class="accent">2024</span></h3>
+                    <p class="footer-description">The premier technology conference bringing together innovators, entrepreneurs, and thought leaders from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <p class="contact-info">San Francisco, CA</p>
+                    <p class="contact-info">info@techsummit2024.com</p>
+                    <p class="contact-info">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSummit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

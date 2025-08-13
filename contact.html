@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TechSummit 2024</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechSummit<span class="accent">2024</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="schedule.html" class="nav-link">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-hero-title">Get in Touch</h1>
+                <p class="page-hero-subtitle">Ready to join the future of technology? We're here to help with any questions about TechSummit 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Send us a Message</h2>
+                        <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                <span class="form-error" id="firstName-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                <span class="form-error" id="lastName-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company/Organization</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                            <span class="form-error" id="company-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiryType" class="form-label">Type of Inquiry</label>
+                            <select id="inquiryType" name="inquiryType" class="form-select" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="general">General Information</option>
+                                <option value="registration">Registration Questions</option>
+                                <option value="speaking">Speaking Opportunity</option>
+                                <option value="sponsorship">Sponsorship & Partnership</option>
+                                <option value="media">Media & Press</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="inquiryType-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and announcements
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and <a href="#" class="terms-link">Terms of Service</a>
+                            </label>
+                            <span class="form-error" id="privacy-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large form-submit" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Contact Information</h2>
+                        <p class="section-subtitle">Multiple ways to reach us</p>
+                    </div>
+                    
+                    <div class="contact-info-grid">
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <div class="icon-location"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Event Location</h3>
+                                <p class="contact-description">
+                                    Moscone Center<br>
+                                    747 Howard St<br>
+                                    San Francisco, CA 94103
+                                </p>
+                                <a href="#" class="contact-link">Get Directions</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <div class="icon-phone"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Phone Support</h3>
+                                <p class="contact-description">
+                                    General: +1 (555) 123-4567<br>
+                                    Registration: +1 (555) 123-4568<br>
+                                    Media: +1 (555) 123-4569
+                                </p>
+                                <p class="contact-hours">Mon-Fri, 9AM-6PM PST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <div class="icon-email"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Email Support</h3>
+                                <p class="contact-description">
+                                    General: info@techsummit2024.com<br>
+                                    Speakers: speakers@techsummit2024.com<br>
+                                    Sponsors: partners@techsummit2024.com
+                                </p>
+                                <p class="contact-hours">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <div class="icon-social"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Social Media</h3>
+                                <div class="social-links-vertical">
+                                    <a href="#" class="social-link-item">
+                                        <span class="social-name">Twitter</span>
+                                        <span class="social-handle">@TechSummit2024</span>
+                                    </a>
+                                    <a href="#" class="social-link-item">
+                                        <span class="social-name">LinkedIn</span>
+                                        <span class="social-handle">TechSummit 2024</span>
+                                    </a>
+                                    <a href="#" class="social-link-item">
+                                        <span class="social-name">Instagram</span>
+                                        <span class="social-handle">@techsummit24</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the registration fees?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Early Bird tickets are $299 (available until August 1st), Regular tickets are $399. Student discounts and group rates are available.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Is there virtual attendance option?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes! We offer hybrid attendance with full virtual access to all sessions, networking events, and recorded content for $149.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What's included in the ticket price?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Access to all sessions, workshops, networking events, breakfast, lunch, coffee breaks, conference materials, and post-event recordings.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Can I get a refund if I can't attend?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Full refunds available until 30 days before the event. After that, you can transfer your ticket to someone else or switch to virtual attendance.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Are there networking opportunities?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Absolutely! We have dedicated networking sessions, industry meetups, startup showcases, and our exclusive evening reception.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-subtitle">Located in the heart of San Francisco's tech district</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="map-marker"></div>
+                        <h3>Moscone Center</h3>
+                        <p>747 Howard St, San Francisco, CA 94103</p>
+                        <div class="map-actions">
+                            <button class="btn btn-primary">Get Directions</button>
+                            <button class="btn btn-secondary">View in Google Maps</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <h3>Getting There</h3>
+                    <div class="transport-options">
+                        <div class="transport-item">
+                            <strong>🚗 By Car:</strong>
+                            <p>Parking available at Moscone Center Garage. Rates: $25/day for attendees.</p>
+                        </div>
+                        <div class="transport-item">
+                            <strong>🚇 By BART:</strong>
+                            <p>Powell Street Station (2 blocks away). Take any downtown-bound train.</p>
+                        </div>
+                        <div class="transport-item">
+                            <strong>🚌 By Bus:</strong>
+                            <p>Multiple Muni lines stop near Moscone: 8, 12, 14, 30, 45.</p>
+                        </div>
+                        <div class="transport-item">
+                            <strong>✈️ From Airport:</strong>
+                            <p>SFO: 30 min by BART or rideshare. Oakland: 45 min by BART.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TechSummit<span class="accent">2024</span></h3>
+                    <p class="footer-description">The premier technology conference bringing together innovators, entrepreneurs, and thought leaders from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <p class="contact-info">San Francisco, CA</p>
+                    <p class="contact-info">info@techsummit2024.com</p>
+                    <p class="contact-info">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSummit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
