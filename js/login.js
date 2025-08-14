@@ -448,6 +448,6 @@ $(document).ready(function() {
     // LOGIN PAGE INITIALIZATION
     // ==========================================
     
-    console.log('Login.js - Login page functionality loaded! 🔐');
+    console.log('Login.js - Login page functionality loaded!');
     
 });

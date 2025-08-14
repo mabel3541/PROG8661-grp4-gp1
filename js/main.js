@@ -135,6 +135,16 @@ $(document).ready(function() {
         showRegistrationModal();
     });
 
+    // Get in touch button functionality
+    function goToContactPage() {
+    window.location.href = 'contact.html';
+    }
+
+    const getInTouchBtn = document.getElementById('getInTouchBtn');
+    if (getInTouchBtn) {
+    getInTouchBtn.onclick = goToContactPage;
+    }
+
     // ==========================================
     // SHARED MODAL FUNCTIONALITY
     // ==========================================
@@ -310,7 +320,7 @@ $(document).ready(function() {
     // INITIALIZATION COMPLETE
     // ==========================================
     
-    console.log('TechSummit 2024 - JavaScript loaded successfully! 🚀');
+    console.log('TechSummit 2024 - JavaScript loaded successfully!');
     
     // Trigger initial scroll events
     $(window).trigger('scroll');

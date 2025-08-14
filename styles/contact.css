@@ -233,16 +233,16 @@
     overflow: hidden;
     position: relative;
     min-height: 400px;
-    display: flex;
+    /*display: flex;  */
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: white;
 }
 
 .map-content {
     text-align: center;
     color: var(--white);
-    padding: var(--spacing-2xl);
+    /*padding: var(--spacing-2xl); */
 }
 
 .map-marker {

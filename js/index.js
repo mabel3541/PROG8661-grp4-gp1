@@ -165,6 +165,6 @@ $(document).ready(function() {
     // INDEX PAGE INITIALIZATION
     // ==========================================
     
-    console.log('Index.js - Index page functionality loaded! 🏠');
+    console.log('Index.js - Index page functionality loaded!');
     
 });

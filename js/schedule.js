@@ -599,6 +599,6 @@ $(document).ready(function() {
         }
     });
     
-    console.log('Schedule.js - Schedule page functionality loaded! 📅');
+    console.log('Schedule.js - Schedule page functionality loaded!');
     
 });

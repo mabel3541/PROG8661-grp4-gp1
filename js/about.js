@@ -1,4 +1,4 @@
-/**
+/**icon
  * TechSummit 2024 - About Page JavaScript
  * About.html specific functionality
  */
@@ -246,6 +246,6 @@ $(document).ready(function() {
     // ABOUT PAGE INITIALIZATION
     // ==========================================
     
-    console.log('About.js - About page functionality loaded! 📖');
+    console.log('About.js - About page functionality loaded!');
     
 });

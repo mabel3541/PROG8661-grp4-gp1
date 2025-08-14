@@ -399,7 +399,7 @@
 .social-icon {
     width: 18px;
     height: 18px;
-    border-radius: var(--border-radius-sm);
+    border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,7 +418,7 @@
 }
 
 .github-icon {
-    background: var(--gray-800);
+    background: black;
     color: var(--white);
 }
 
@@ -498,6 +498,7 @@
     margin-bottom: var(--spacing-2xl);
     opacity: 0.9;
     line-height: 1.6;
+    color: black !important;
 }
 
 .info-features {
@@ -538,6 +539,7 @@
     font-size: var(--font-size-sm);
     margin: 0;
     line-height: 1.4;
+    color: black !important;
 }
 
 /* Info Stats */
@@ -575,6 +577,7 @@
     font-size: var(--font-size-sm);
     opacity: 0.8;
     margin: 0;
+    color: black !important;
 }
 
 /* Info Testimonial */
@@ -595,6 +598,7 @@
     margin-bottom: var(--spacing-lg);
     font-size: var(--font-size-base);
     line-height: 1.6;
+    color: black !important;
 }
 
 .testimonial-author {

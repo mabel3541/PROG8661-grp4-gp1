@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>TechSummit<span class="accent">2024</span></h2>
+                <a href="index.html"><h2>TechSummit<span class="accent">2024</span></h2></a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -175,7 +175,7 @@
                                     747 Howard St<br>
                                     San Francisco, CA 94103
                                 </p>
-                                <a href="#" class="contact-link">Get Directions</a>
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=747+Howard+St,+San+Francisco,+CA+94103" target="_blank" class="contact-link">Get Directions</a>
                             </div>
                         </div>
                         
@@ -216,15 +216,15 @@
                             <div class="contact-details">
                                 <h3 class="contact-title">Social Media</h3>
                                 <div class="social-links-vertical">
-                                    <a href="#" class="social-link-item">
+                                    <a href="javascript:void(0)" class="social-link-item">
                                         <span class="social-name">Twitter</span>
                                         <span class="social-handle">@TechSummit2024</span>
                                     </a>
-                                    <a href="#" class="social-link-item">
+                                    <a href="javascript:void(0)" class="social-link-item">
                                         <span class="social-name">LinkedIn</span>
                                         <span class="social-handle">TechSummit 2024</span>
                                     </a>
-                                    <a href="#" class="social-link-item">
+                                    <a href="javascript:void(0)" class="social-link-item">
                                         <span class="social-name">Instagram</span>
                                         <span class="social-handle">@techsummit24</span>
                                     </a>
@@ -303,13 +303,30 @@
             <div class="map-container">
                 <div class="map-placeholder">
                     <div class="map-content">
-                        <div class="map-marker"></div>
-                        <h3>Moscone Center</h3>
-                        <p>747 Howard St, San Francisco, CA 94103</p>
+        
+                        <iframe
+                            width="100%"
+                            height="310"
+                            frameborder="0"
+                            style="border:0; margin-bottom:16px;"
+                            allowfullscreen
+                            src="https://www.google.com/maps?q=747+Howard+St,+San+Francisco,+CA+94103&output=embed">
+                        </iframe>
                         <div class="map-actions">
-                            <button class="btn btn-primary">Get Directions</button>
-                            <button class="btn btn-secondary">View in Google Maps</button>
+                            <a 
+                                href="https://www.google.com/maps/dir/?api=1&destination=747+Howard+St,+San+Francisco,+CA+94103"
+                                target="_blank"
+                                class="btn btn-primary">
+                                <span>Get Directions</span>
+                            </a>
+                            <a
+                                href="https://www.google.com/maps?q=747+Howard+St,+San+Francisco,+CA+94103"
+                                target="_blank"
+                                class="btn btn-secondary">
+                                View in Google Maps
+                            </a>
                         </div>
+
                     </div>
                 </div>
                 <div class="location-details">
@@ -357,9 +374,9 @@
                 <div class="footer-section">
                     <h4 class="footer-heading">Connect</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Instagram</a>
+                        <a href="javascript:void(0)" class="social-link">Twitter</a>
+                        <a href="javascript:void(0)" class="social-link">LinkedIn</a>
+                        <a href="javascript:void(0)" class="social-link">Instagram</a>
                     </div>
                 </div>
                 <div class="footer-section">

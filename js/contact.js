@@ -35,7 +35,7 @@ $(document).ready(function() {
         },
         phone: {
             required: false,
-            pattern: /^[\+]?[1-9][\d]{0,15}$/,
+            pattern: /^[\+]?[1-9][\d]{9,15}$/,
             message: 'Please enter a valid phone number'
         },
         inquiryType: {
@@ -64,12 +64,12 @@ $(document).ready(function() {
         if (!rule) return { isValid: true };
 
         // Check required
-        if (rule.required && (!value || value.trim() === '')) {
+        if (rule.required && (!value || value.trim === '')) {
             return { isValid: false, message: `${fieldName} is required` };
         }
 
         // Skip other validations if field is empty and not required
-        if (!rule.required && (!value || value.trim() === '')) {
+        if (!rule.required && (!value || value.trim === '')) {
             return { isValid: true };
         }
 
@@ -314,20 +314,7 @@ $(document).ready(function() {
     const mapActions = $('.map-actions .btn');
     
     // Map action handlers
-    mapActions.on('click', function(e) {
-        e.preventDefault();
-        const action = $(this).text().toLowerCase();
-        
-        if (action.includes('directions')) {
-            // Simulate opening directions
-            console.log('Opening directions to Moscone Center...');
-            showMapNotification('Opening directions in your default maps app...');
-        } else if (action.includes('google')) {
-            // Simulate opening Google Maps
-            console.log('Opening Google Maps...');
-            showMapNotification('Opening location in Google Maps...');
-        }
-    });
+    
     
     function showMapNotification(message) {
         const notification = $(`
@@ -399,7 +386,7 @@ $(document).ready(function() {
                 cursor: pointer;
             }
             .transport-item.highlighted {
-                background-color: rgba(99, 102, 241, 0.05);
+                /* background-color: rgba(99, 102, 241, 0.05); */
                 transform: translateX(10px);
             }
         `)
@@ -409,6 +396,6 @@ $(document).ready(function() {
     // CONTACT PAGE INITIALIZATION
     // ==========================================
     
-    console.log('Contact.js - Contact page functionality loaded! 📞');
+    console.log('Contact.js - Contact page functionality loaded!');
     
 });

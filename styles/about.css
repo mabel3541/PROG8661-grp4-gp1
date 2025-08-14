@@ -223,6 +223,7 @@
 .placeholder-content p {
     opacity: 0.9;
     font-size: var(--font-size-lg);
+    color: black !important;
 }
 
 /* Team Section */

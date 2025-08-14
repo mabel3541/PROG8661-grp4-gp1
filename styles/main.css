@@ -187,6 +187,10 @@ a:hover {
     box-shadow: var(--shadow-lg);
 }
 
+.btn-primary:hover span {
+    color: var(--white);
+}
+
 .btn-secondary {
     background: transparent;
     color: var(--primary-color);
